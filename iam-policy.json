@@ -1,0 +1,32 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "ReadCognitoPools",
+            "Effect": "Allow",
+            "Action": [
+                "cognito-idp:ListUserPools",
+                "cognito-idp:DescribeUserPool",
+                "cognito-idp:ListUsers",
+                "cognito-idp:ListGroups"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "WriteBackupToS3",
+            "Effect": "Allow",
+            "Action": "s3:PutObject",
+            "Resource": "arn:aws:s3:::<BACKUP_BUCKET>/*"
+        },
+        {
+            "Sid": "Logs",
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "arn:aws:logs:*:*:*"
+        }
+    ]
+}
