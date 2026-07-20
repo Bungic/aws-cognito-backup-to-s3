@@ -83,3 +83,7 @@ Same-day re-runs overwrite that day's file. If you need every run preserved, add
 ## License
 
 MIT, see [LICENSE](LICENSE).
+
+---
+
+Part of my cloud-engineering portfolio → **[frkangungor.com](https://frkangungor.com)**
