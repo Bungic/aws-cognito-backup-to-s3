@@ -1,5 +1,7 @@
 # cognito-backup-to-s3
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![AWS Lambda](https://img.shields.io/badge/AWS%20Lambda-FF9900?logo=awslambda&logoColor=white)
+
 A Lambda that backs up every Cognito user pool in your account (pool config, users, and groups) to a single S3 bucket. Designed to run on a daily schedule.
 
 I wrote it because Cognito has no built-in backup. If someone deletes a pool, accidentally drops users, or you want a point-in-time snapshot for compliance, you need to roll your own. The full story is on Medium: [Automatically Backing Up AWS Cognito User Pools](https://furkangungor.medium.com/automatically-backing-up-aws-cognito-user-pools-8d62bfa4091a).
